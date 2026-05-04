@@ -1,0 +1,70 @@
+Javascript
+----------
+
+What is V8 Engine ? 
+What is the difference between framework and library?  
+What are the different frameworks of JS available right now, and what do they do? 
+Also do the same work for library?
+
+JAVA 
+Javascript
+
+
+HTML    - skeleton
+CSS     - styling 
+JS      - logic 
+
+
+<script></script>
+
+Internal JS 
+External JS 
+
+Scripting Language 
+
+DataTypes - Scopes
+------------------
+1. function Scope
+    var - old version -- can be updated 
+
+
+2. Block Scope 
+    let   -- new version - can be updated
+    const  -- new version -- cannot be updated
+
+
+
+
+Web Application - Frontend + Backend + Database 
+
+MERN STACK 
+---------
+MONGO DB      - Database
+Express JS    - backend 
+React JS      - Frontend 
+Node JS       - manage 
+
+API - Application Programming Interface
+
+JS IS SYNCHRONOUS
+
+basics
+conditionals 
+loop 
+functions 
+string 
+array 
+
+json
+jsonArray 
+events 
+eventListener
+
+DOM 
+ASYNC 
+
+
+HTML 
+    HEAD 
+    BODY 
+        h1 
