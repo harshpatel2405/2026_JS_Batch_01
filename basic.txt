@@ -2,12 +2,15 @@ Javascript
 ----------
 
 What is V8 Engine ? 
+V8 Engine (Chrome)
+JS -> Runtime, Engine 
+
 What is the difference between framework and library?  
 What are the different frameworks of JS available right now, and what do they do? 
 Also do the same work for library?
 
 JAVA 
-Javascript
+Javascript 
 
 
 HTML    - skeleton
