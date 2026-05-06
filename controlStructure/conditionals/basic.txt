@@ -1,0 +1,6 @@
+Conditionals 
+------------
+1. If_else
+2. Switch_Case 
+3. Ternary Operator 
+
