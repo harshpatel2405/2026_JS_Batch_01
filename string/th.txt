@@ -1,0 +1,3 @@
+String -> sequence of characters
+
+Between substring and slice, which is preferred the most? 
