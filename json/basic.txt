@@ -1,0 +1,29 @@
+Object -> key : value pair (something which holds data)
+
+JSON 
+----
+Javascript Object Notation 
+
+{
+    name : "",
+    age : ,
+    adult : false,
+    .
+    .
+    .
+    .
+}
+
+{
+    name : "",
+    age : ,
+    adult : true, 
+    .
+    .
+    .
+    .
+    .
+}
+
+
+HW Question : what is the difference between '+' and ',' in JS ?
