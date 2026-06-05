@@ -7,6 +7,9 @@ msg("Stay United");
 
 // * arrow function
 let greet = (user) => {
+
+
+  
   console.log("THis is a greet message from ", user);
 };
 
