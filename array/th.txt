@@ -1,0 +1,21 @@
+Array 
+-----
+Array consists of multiple values of different data type 
+it is iterable 
+mutable 
+symbol []
+can be accessed with index
+duplicate values are allowed
+
+length
+push 
+pop
+shift 
+unshift
+
+index of 
+includes
+
+sort 
+reverse
+
