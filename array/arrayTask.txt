@@ -1,0 +1,20 @@
+Q1 : Create an array of 5 fruits. Add one more fruit at the end and print the updated array along with its length.
+
+Q2 : Create an array of 4 cities. Remove the first city and add a new city at the beginning. Print the updated array.
+
+Q3 : Create an array of programming languages. Check whether "JavaScript" exists in the array. If it exists, print its position; otherwise print "Not Found".
+
+Q4 : Create an array of 6 numbers. Sort the array in ascending order and then reverse it to display the numbers in descending order.
+
+Q5 : Create an array of 5 numbers.
+    Perform the following operations in sequence:
+
+    Add a number at the beginning.
+    Add a number at the end.
+    Remove the first element.
+    Remove the last element.
+    Sort the array.
+    Reverse the array.
+    Check whether a specific number exists in the array.
+    Find the index of another specific number.
+    Print the final array and its length.
