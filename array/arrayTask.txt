@@ -18,3 +18,14 @@ Q5 : Create an array of 5 numbers.
     Check whether a specific number exists in the array.
     Find the index of another specific number.
     Print the final array and its length.
+
+Q.6 
+let mouses = [
+  { name: "Evofox", price: 750, DPI: 15000, wireless: false },
+  { name: "coconut", price: 890, DPI: 1600, wireless: true },
+  { name: "Ant E Sports", price: 1500, DPI: 25000, wireless: false },
+];
+//task 1 : print only that json where price is less than 900
+//task 2 : print only that json where DPI is greater than 2000
+//task 3 : print only that json where mouse is wireless
+//task 4 : print only that json where name is "coconut" or price is less than 1000
