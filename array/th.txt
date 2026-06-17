@@ -19,3 +19,14 @@ includes
 sort 
 reverse
 
+
+Array Iteration 
+---------------
+For Each     -- iterating over the item
+Map          -- returning a new array containing the length of the items 
+Filter       -- selection 
+Reduce       -- one value 
+Some         -- ANY ? 
+Every        -- ALL ?
+Find         -- will find you the first occurence 
+Chaining     -- using any above combination
