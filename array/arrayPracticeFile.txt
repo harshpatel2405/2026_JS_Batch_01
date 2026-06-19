@@ -1,0 +1,112 @@
+1. Student Analytics Dashboard
+
+const students = [
+{id: 1, name: "Amit", marks: 78},
+{id: 2, name: "Priya", marks: 92},
+{id: 3, name: "Rahul", marks: 65},
+{id: 4, name: "Sneha", marks: 88},
+{id: 5, name: "Karan", marks: 45}
+];
+
+Tasks:
+
+1. Get all students scoring above 75.
+2. Create an array containing only student names.
+3. Find the topper.
+4. Calculate average marks.
+5. Check if any student failed (< 35).
+6. Check if every student passed.
+
+Methods to use:
+filter, map, reduce, some, every, find
+
+---
+
+2. E-Commerce Product Analysis
+
+const products = [
+{id: 1, name: "Laptop", price: 50000, stock: 10},
+{id: 2, name: "Mouse", price: 1000, stock: 0},
+{id: 3, name: "Keyboard", price: 2500, stock: 15},
+{id: 4, name: "Monitor", price: 12000, stock: 5}
+];
+
+Tasks:
+
+1. Find all out-of-stock products.
+2. Calculate total inventory value.
+3. Create a discounted product list (10% off).
+4. Check if any product costs more than 40000.
+5. Find the first product costing more than 10000.
+
+Methods to use:
+filter, map, reduce, some, find
+
+---
+
+3. Company Employee Report
+
+const employees = [
+{id:1,name:"John",dept:"IT",salary:70000},
+{id:2,name:"Sarah",dept:"HR",salary:50000},
+{id:3,name:"Mike",dept:"IT",salary:90000},
+{id:4,name:"Emma",dept:"Finance",salary:80000},
+{id:5,name:"David",dept:"IT",salary:75000}
+];
+
+Tasks:
+
+1. Get all IT employees.
+2. Calculate total salary payout.
+3. Find the highest-paid employee.
+4. Check if all employees earn above 40000.
+5. Create an array containing employee names.
+
+Methods to use:
+filter, reduce, every, map
+
+---
+
+4. Online Course Platform
+
+const courses = [
+{id:1,title:"Java",students:120,rating:4.8},
+{id:2,title:"Python",students:90,rating:4.6},
+{id:3,title:"DSA",students:200,rating:4.9},
+{id:4,title:"DBMS",students:70,rating:4.2}
+];
+
+Tasks:
+
+1. Find the course with the highest rating.
+2. Calculate total enrolled students.
+3. Get all courses with rating above 4.5.
+4. Check if every course has more than 50 students.
+5. Create an array containing course titles.
+
+Methods to use:
+reduce, filter, every, map
+
+---
+
+5. Movie Streaming Analytics
+
+const movies = [
+{id:1,title:"Movie A",views:5000,rating:4.1},
+{id:2,title:"Movie B",views:15000,rating:4.8},
+{id:3,title:"Movie C",views:8000,rating:3.9},
+{id:4,title:"Movie D",views:22000,rating:4.9}
+];
+
+Tasks:
+
+1. Find the most viewed movie.
+2. Calculate total views.
+3. Get all movies with rating above 4.5.
+4. Check if any movie has rating below 4.
+5. Create an array in the format:
+   "Movie A - 5000 Views"
+   "Movie B - 15000 Views"
+
+Methods to use:
+reduce, filter, some, map
