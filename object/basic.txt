@@ -1,0 +1,16 @@
+JSON - text format 
+let student = 
+{
+    "name" : "harsh",
+    "marks"  : 98
+}
+
+json 
+json -> object 
+json.parse()
+
+let student = 
+{
+    name : "harsh",
+    marks : 98
+}
