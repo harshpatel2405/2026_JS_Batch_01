@@ -27,3 +27,11 @@ Javascript Object Notation
 
 
 HW Question : what is the difference between '+' and ',' in JS ?
+
+
+JSON IS STRING 
+
+JSON _ Exchanging data -- client and server , api call
+
+1. Convert js object to JSON   -> json.stringify
+2. Convert JSON to js Object   -> JSON.parse()
