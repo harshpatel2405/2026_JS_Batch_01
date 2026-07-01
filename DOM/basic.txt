@@ -25,7 +25,6 @@ document
 |   |    |-- h1
 |   |    |-- p
 
-
 Why do we need DOM?
 1. Access HTML Elements
 2. Modify HTML Content 
@@ -36,3 +35,18 @@ Why do we need DOM?
 DOM -> Representation of HTML Page   , used by js to manipulate content on browser
 
 if i need to access any HTML Content -- i will be needing selectors
+
+<======================================================================================>
+i need to change h1 -> all h1                                  -> tag / element 
+i need to change h1 with class demo -> all h1 with class Demo  -> class 
+i need to change h1 with id demo -> h1 with id Demo            -> id 
+
+
+HTML -> KITCHEN -> RAW MATERIALS , SAUCES , CUTLERY 
+DOM  -> MODIFY -> WILL MAKE SOMETHING FROM HTML 
+
+HTML 
+<h1>Kaise ho aap! Jyada jaankari ke liye dial kare 1952</h1>
+
+
+<h1>Mukesh ab nahi raha !!</h1>
