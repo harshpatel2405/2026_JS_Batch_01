@@ -1,0 +1,162 @@
+# document.createElement() Practice Questions
+
+## Level 1 – Beginner
+
+1. Create an <h1> element and display the text "Welcome to JavaScript".
+2. Create a <p> element and display your name.
+7. Create an <h3> element and display your favorite programming language.
+8. Create an <a> element with the text "Visit Google" and set the href attribute.
+9. Create an <hr> element and display it on the page.
+10. Create a <br> element between two paragraphs.
+
+--------------------------------------------------------
+
+## Level 2 – Intermediate
+
+11. Create an unordered list (<ul>) with 3 list items.
+
+12. Create an ordered list (<ol>) containing the names of five fruits.
+
+13. Create a table with 2 rows and 2 columns.
+
+14. Create a <select> dropdown with five options.
+
+15. Create a student card containing:
+    - Name
+    - Age
+    - Course
+
+16. Create a profile card containing:
+    - Image
+    - Name
+    - Profession
+    - Button
+
+17. Create a login form containing:
+    - Username
+    - Password
+    - Login Button
+
+18. Create three buttons:
+    - Save
+    - Update
+    - Delete
+
+19. Create five paragraphs using a loop.
+    Output:
+    Paragraph 1
+    Paragraph 2
+    Paragraph 3
+    Paragraph 4
+    Paragraph 5
+
+20. Create ten <h2> headings numbered:
+    Student 1
+    Student 2
+    ...
+    Student 10
+
+--------------------------------------------------------
+
+## Level 3 – Advanced
+
+21. Create a product card containing:
+    - Product Image
+    - Product Name
+    - Price
+    - Buy Now Button
+
+22. Create a movie card containing:
+    - Poster
+    - Movie Name
+    - Rating
+    - Release Year
+
+23. Create a navigation bar with five links.
+
+24. Create a footer containing:
+    - Copyright
+    - Social Media Links
+
+25. Create a recipe card containing:
+    - Recipe Name
+    - Ingredients
+    - Steps
+
+26. Create a 3 × 3 grid of boxes using nested loops.
+
+27. Create a multiplication table (1–10) using only DOM elements.
+
+28. Create 20 buttons dynamically numbered from 1 to 20.
+
+29. Create a photo gallery with six images.
+
+30. Create a student report card containing:
+    - Student Name
+    - Roll Number
+    - Marks
+    - Grade
+    - Percentage
+    - Pass/Fail Status
+
+--------------------------------------------------------
+
+## Challenge Questions
+
+31. Create a To-Do List where every task is created using document.createElement().
+
+32. Create an Employee Card from the following object:
+    - Name
+    - Department
+    - Salary
+
+33. Create 10 student cards dynamically from an array of names.
+
+34. Create a calendar layout (7 columns × 5 rows) using only createElement().
+
+35. Create a YouTube video card containing:
+    - Thumbnail
+    - Title
+    - Channel Name
+    - Views
+    - Upload Time
+
+36. Create a Netflix movie card containing:
+    - Banner
+    - Movie Name
+    - Genre
+    - Rating
+    - Watch Now Button
+
+37. Create an Amazon product card containing:
+    - Product Image
+    - Product Name
+    - Rating
+    - Price
+    - Discount
+    - Add to Cart Button
+
+38. Create a Student Management System UI dynamically with:
+    - Heading
+    - Name Input
+    - Age Input
+    - Course Input
+    - Add Student Button
+    - Student List Section
+
+39. Create a Dashboard with four statistic cards:
+    - Total Students
+    - Courses
+    - Revenue
+    - Teachers
+
+40. Build a complete Portfolio Page using only JavaScript DOM methods (createElement() and related methods). Include:
+    - Header
+    - Navigation Bar
+    - Hero Section
+    - About Section
+    - Skills Section
+    - Projects Section
+    - Contact Form
+    - Footer
+

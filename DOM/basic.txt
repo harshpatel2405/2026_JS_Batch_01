@@ -50,3 +50,19 @@ HTML
 
 
 <h1>Mukesh ab nahi raha !!</h1>
+
+
+getElementbyID      -- single object 
+getElementbyClassName   -- collection 
+getElementbyTagName   -- collection 
+
+
+NodeList   vs      HTMLCollection
+for each            no for each 
+static              dynamic 
+2                   3
+querySelectorAll    getElement(tag)  
+                    etElement(class)
+
+
+div + 1
