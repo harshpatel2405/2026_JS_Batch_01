@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div id="mylist"></div>
+
+    <script>
+        //  Create an unordered list (<ul>) with 3 list items.
+        let mylist = document.getElementById("mylist")
+
+        let ol = document.createElement("ol");
+
+        let list1 = document.createElement("li")
+        list1.innerHTML = "<b>Apple</b>"
+        let list2 = document.createElement("li")
+        list2.innerHTML = "<b>Banana</b>"
+        list2.setAttribute("value",5)
+
+        console.log(list2.getAttribute("value"))
+
+        list2.removeAttribute("value")
+
+
+        let list3 = document.createElement("li")
+        list3.innerHTML = "<b>Orange</b>"
+        let list4 = document.createElement("li")
+        list4.innerHTML = "<b>Blueberry</b>"
+
+        ol.appendChild(list1);
+        ol.appendChild(list2);
+        ol.appendChild(list3);
+        ol.appendChild(list4)
+
+        ol.setAttribute("type", "i")
+        ol.setAttribute("start",3)
+
+        mylist.appendChild(ol)
+
+        mylist.removeChild(ol)
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <style>
+            .text
+            {
+                display : flex;
+                justify-content : space-evenly;
+            }
+        </style>
+</head>
+
+<body>
+    <div class="text">
+   
+    <div class="card" style="width: 18rem;">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title"></h5>
+            <p class="card-text"></p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title"></h5>
+            <p class="card-text"></p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+    </div>
+     </div>
+
+    <script>
+        let image = document.getElementsByClassName("card-img-top")
+        image[0].setAttribute("src", "https://rukminim2.flixcart.com/image/480/640/xif0q/poster/9/k/i/medium-dhurandhar-movie-framed-poster-for-home-office-wall-art-original-imahm5a9zr7jrtfb.jpeg?q=90")
+        image[0].setAttribute("alt", "Dhurandhar poster")
+
+        let cardTitle = document.getElementsByClassName("card-title")
+        cardTitle[0].innerText = "Dhurandhar"
+        let cardtext = document.getElementsByClassName("card-text")
+        cardtext[0].innerText = "Dhurandhar a classic spy movie based on Jaskirat Singh Rangi Played by Ranveer Singh"
+
+        let anchor = document.getElementsByTagName("a")
+        anchor[0].setAttribute("href", "https://www.netflix.com/in/title/82813021")
+        anchor[0].innerHTML = "<b>Watch and Binge Now</b>"
+
+    </script>
+</body>
+
+</html>
+
+<!-- 
+Create a movie card containing:
+    - Poster
+    - Movie Name
+    - Rating
+    - Release Year
+ -->
+
+
+ <!-- Task : make an array of object containing 10 movie posters and their details 
+ image src, alt , title , description , anchor tag href , button name -->
