@@ -1,0 +1,11 @@
+Events 
+------
+which helps in identifying any change 
+we can only apply one event to a element -- simple events
+
+
+eventLIstener 
+we can apply multiple events 
+
+
+we will be needing a function
