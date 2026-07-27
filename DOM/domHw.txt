@@ -153,10 +153,9 @@
     - Teachers
 
 40. Build a complete Portfolio Page using only JavaScript DOM methods (createElement() and related methods). Include:
-    - Header
-    - Navigation Bar
+    - Header (LOGO, HOME , ABOUT US , CONTACT US , PROJECTS , RESUME   )
     - Hero Section
-    - About Section
+    - EDUCATION SECTION (TABLE , ARRAY OF OBJECT , MAP)
     - Skills Section
     - Projects Section
     - Contact Form

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form>
+        <table>
+            <tr>
+                <td>
+                    <label>Username</label>
+                </td>
+                <td>
+                    <input type="text" id="uname">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Password</label>
+                </td>
+                <td>
+                    <input type="password" id="pwd">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <button type="button" onclick="login()">Login</button>
+                </td>
+            </tr>
+        </table>
+
+    </form>
+    <h1 id="res"></h1>
+
+    <script>
+        let un = "demo1123"
+        let pw = "demo@1123"
+
+        let password = document.getElementById("pwd")
+        let result = document.getElementById("res")
+        let username = document.getElementById("uname")
+
+        function login() {
+            if (password.value == pw && un == username.value) {
+                result.innerText = "Login Successful";
+                result.style.color = "green"
+            }else
+            {
+                result.innerText = "Invalid Credentials";
+                result.style.color = "red"
+            }
+        }
+
+    </script>
+</body>
+
+</html>
+
+
+<!-- *
+* add validation 
+* password and username should not be empty (error : show error message)
+* 1. password and username should not be empty 
+* 2. Length of password should be greater than 8 (error : length should be greater than 8)
+-->
+
+<!-- * form (name), different input type , product selection and display page -->
