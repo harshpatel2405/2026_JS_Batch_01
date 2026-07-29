@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .box {
+            margin: 0 auto;
+            width: 400px;
+            height: 200px;
+            border: 2px solid red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* text-align: center; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <form name="product">
+            <label>Full Name</label>
+            <input type="text" name="fname">
+            <br>
+
+            <label>Age : </label>
+            <input type="number" name="age">
+            <br>
+
+            <label>Gender : </label>
+            <input type="radio" value="male" name="gender">Male
+            <input type="radio" value="female" name="gender">Female
+            <br>
+
+            <label>Sports : </label>
+            <input type="checkbox" name="hobby" value="football">Football
+            <input type="checkbox" name="hobby" value="cricket">Cricket
+            <input type="checkbox" name="hobby" value="kabaddi">Kabaddi
+            <input type="checkbox" name="hobby" value="baseball">Baseball
+            <br>
+            Description : <textarea name="description"></textarea>
+            <br>
+            <button type="button" onclick="getData()">Submit</button>
+        </form>
+    </div>
+
+    <h3 id="data"></h3>
+
+    <script>
+        let name = document.product.fname;
+        let age = document.product.age;
+        let gender = document.product.gender;
+        let desc = document.product.description;
+        let data = document.getElementById("data")
+
+
+        function getData() {
+            let hobby = document.product.hobby;
+            hobbies = ""
+            for (let i in hobby) {
+                if (hobby[i].checked) {
+
+                    hobbies += hobby[i].value + " "
+                }
+            }
+            console.log(hobbies)
+        }
+
+
+    </script>
+
+</body>
+
+</html>
+
+<!--
+* 1. name , dropdown(product category), price , customerType (regular , premium, employee), extra products(4 product), description ,  -->
