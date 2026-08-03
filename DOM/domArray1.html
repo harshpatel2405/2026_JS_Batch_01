@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            height: 200px;
+            width: 300px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <input type="number" id="data">
+    <button type="button" onclick="addElement()">Click to add</button>
+    <button type="button" onclick="removeElement()">Click to Remove</button>
+    <h3 id="arr"></h3>
+    <h2 id="add">Sum : 0</h2>
+
+    <div id="new1">
+
+    </div>
+
+    <script>
+        let num = []
+        let arr = document.getElementById("arr");
+        let add = document.getElementById("add");
+        function addElement() {
+            let data = document.getElementById("data")
+            if (data.value != "") {
+                num.push(parseInt(data.value))
+                arr.innerText = num.map((n) => n)
+                data.value = ""
+                add.innerText = "Sum : " + num.reduce((acc, curr) => acc + curr)
+            }
+        }
+
+        let new1 = document.getElementById("new1");
+        function removeElement() {
+            let inputbox = document.createElement("input")
+            inputbox.setAttribute('type', 'number')
+            inputbox.setAttribute('placeholder', '1.Index\t2. Value')
+
+            new1.appendChild(input)
+        }
+
+    </script>
+
+</body>
+
+</html>
+
+<!-- 
+ * ask if user wants to delete a number , 
+ *    1. by index
+ *    2. by value
+ -->
