@@ -8,7 +8,7 @@
     <style>
         div {
             height: 200px;
-            width: 300px;
+            width: 400px;
             border: 2px solid black;
         }
     </style>
@@ -29,6 +29,7 @@
         let num = []
         let arr = document.getElementById("arr");
         let add = document.getElementById("add");
+        let ch = "hello";
         function addElement() {
             let data = document.getElementById("data")
             if (data.value != "") {
@@ -41,11 +42,96 @@
 
         let new1 = document.getElementById("new1");
         function removeElement() {
-            let inputbox = document.createElement("input")
-            inputbox.setAttribute('type', 'number')
-            inputbox.setAttribute('placeholder', '1.Index\t2. Value')
 
-            new1.appendChild(input)
+            new1.innerHTML = "";
+
+            let label = document.createElement("label");
+            let inputbox = document.createElement("input");
+            let button = document.createElement("button");
+
+            label.innerText = "Select Choice : ";
+
+            inputbox.type = "number";
+            inputbox.id = "choiceInput";
+            inputbox.placeholder = "1. Index  2. Value";
+
+            button.type = "button";
+            button.innerText = "Submit";
+
+            button.onclick = choice;
+
+            new1.append(label, inputbox, button);
+        }
+
+        function choice() {
+
+            let ch = Number(document.getElementById("choiceInput").value);
+
+            console.log(ch);
+
+            if (ch == 1) {
+                removeByIndex();
+            } else {
+                removeByValue();
+            }
+
+            // new1.innerHTML = "Choice : " + ch;
+        }
+
+        function removeByValue()
+        {
+            let label = document.createElement("label");
+            let inputbox = document.createElement("input");
+            let button = document.createElement("button");
+
+            label.innerText = "Enter Value : ";
+
+            inputbox.type = "number";
+            inputbox.id = "choicevalue";
+            inputbox.placeholder = "Enter value to be deleted";
+
+            button.type = "button";
+            button.innerText = "Submit";
+
+            button.onclick = getValue;
+
+            new1.append(label, inputbox, button);
+        }
+
+        function getValue()
+        {
+             let value = document.getElementById("choicevalue").value
+
+            num = num.filter((n)=> n != value)
+            arr.innerHTML = ""
+            arr.innerHTML = num
+        }
+
+        function removeByIndex() {
+            let label = document.createElement("label");
+            let inputbox = document.createElement("input");
+            let button = document.createElement("button");
+
+            label.innerText = "Enter Index : ";
+
+            inputbox.type = "number";
+            inputbox.id = "choiceIndex";
+            inputbox.placeholder = "Enter index to be deleted";
+
+            button.type = "button";
+            button.innerText = "Submit";
+
+            button.onclick = getindex;
+
+            new1.append(label, inputbox, button);
+        }
+
+        function getindex() {
+            let index = document.getElementById("choiceIndex").value
+
+            num.splice(index,1)
+            arr.innerHTML = ""
+            arr.innerHTML = num
         }
 
     </script>

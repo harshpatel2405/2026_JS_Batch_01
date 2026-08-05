@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            height: 400px;
+            width: 300px;
+            border: 2px solid red;
+        }
+
+        img {
+            width: 250px;
+            height: 350px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="myDiv">
+        <img src="https://media.geeksforgeeks.org/wp-content/uploads/ONbulb.jpg" onclick="changeImage()">
+
+
+
+    </div>
+
+    <script>
+        ison = true
+        let div = document.getElementById("myDiv")
+        function changeImage() {
+            let image = document.createElement('img')
+            if (ison) {
+                image.setAttribute('src',"https://media.geeksforgeeks.org/wp-content/uploads/OFFbulb.jpg")
+                div.innerHTML =""
+                div.appendChild(image) 
+            }
+            else{
+                image.setAttribute('src',"https://media.geeksforgeeks.org/wp-content/uploads/ONbulb.jpg")
+                div.innerHTML =""
+                div.appendChild(image) 
+
+            }
+        }
+    </script>
+</body>
+
+</html>

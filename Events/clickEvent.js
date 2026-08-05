@@ -10,7 +10,7 @@ function counter() {
 }
 
 colors = ["red", "black", "yellow", "pink", "grey"];
-let myDiv = document.getElementsByTagName("body");
+let myDiv = document.getElementById("myDiv");
 let k = 0;
 
 function changeColor() {
