@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            margin: 20px;
+            padding: 20px;
+            box-shadow: 3px 4px 8px gray;
+            width: 50vw;
+            height: 50vh;
+            border: 2px solid gray;
+            border-radius: 8px;
+        }
+
+        button {
+            width: 100px;
+            height: 35px;
+            font-size: 18px;
+            font-weight: 600;
+
+            border: none;
+            border-radius: 8px;
+
+            background-color: #0e2fe7;
+            color: white;
+
+            cursor: pointer;
+
+            transition: 0.3s;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0924b8;
+            transform: translateY(-2px);
+        }
+
+        button:active {
+            transform: translateY(0);
+        }
+        body{
+            height: 100vh;
+           width: 100vw;
+        }
+    </style>
+</head>
+
+<body onmousemove="getData5(event)">
+    <div id="myDiv">
+
+    </div>
+    <h1 id="color">Color : White</h1>
+
+    <button onmouseenter="getData1()">Mouse Enter</button>
+    <button onmouseleave="getData2()">Mouse Leave</button>
+    <button onmouseup="getData3()">Mouse Up</button>
+    <button onmousedown="getData4()">Mouse Down</button>
+    <!-- <button onmousemove="getData5(event)">Mouse move</button> -->
+
+
+    <!-- <button>Mouse Leave</button> -->
+
+    <script>
+        const colors = ["#FF0000", "#00FF00", "#0000FF", "#FFFF00", "#00FFFF", "#FF00FF", "#FFA500", "#800080", "#FFC0CB", "#A52A2A", "#008000", "#808000", "#000080", "#008080", "#C0C0C0", "#808080", "#000000", "#FFFFFF", "#FFD700", "#4B0082", "#EE82EE", "#40E0D0", "#DC143C", "#FF7F50", "#F4A460", "#D2691E", "#B22222", "#FF6347", "#32CD32", "#7CFC00", "#228B22", "#00CED1", "#1E90FF", "#4169E1", "#6495ED", "#6A5ACD", "#9370DB", "#BA55D3", "#DA70D6", "#FF1493", "#C71585", "#F08080", "#FA8072", "#FFB6C1", "#FFE4B5", "#F5DEB3", "#D2B48C", "#98FB98", "#AFEEEE", "#E6E6FA"
+        ];
+        let myDiv = document.getElementById("myDiv")
+        let color = document.getElementById("color")
+        let index = 0;
+        function getData1() {
+            myDiv.style.backgroundColor = 'red'
+            color.innerText = 'Color : Red'
+            console.log("Hello ")
+        }
+        function getData2() {
+            myDiv.style.backgroundColor = 'blue'
+            color.innerText = 'Color : Blue'
+        }
+        function getData3() {
+            myDiv.style.backgroundColor = 'black'
+            color.innerText = 'Color : Black'
+        }
+        function getData4() {
+            myDiv.style.backgroundColor = 'green'
+            color.innerText = 'Color : Green'
+        }
+        function getData5(event) {
+            myDiv.style.backgroundColor = colors[index]
+            color.innerText = 'Color : ' + colors[index++]
+            console.log("X : " + event.clientX)
+            console.log("Y : " + event.clientY)
+
+            if (index == colors.length) index = 0;
+        }
+
+    </script>
+</body>
+
+</html>

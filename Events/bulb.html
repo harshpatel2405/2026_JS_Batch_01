@@ -7,7 +7,7 @@
     <title>Document</title>
     <style>
         div {
-            height: 400px;
+            height: 450px;
             width: 300px;
             border: 2px solid red;
         }
@@ -16,33 +16,35 @@
             width: 250px;
             height: 350px;
         }
+        h2{
+            text-align: center;
+        }
     </style>
 </head>
 
 <body>
-    <div id="myDiv">
-        <img src="https://media.geeksforgeeks.org/wp-content/uploads/ONbulb.jpg" onclick="changeImage()">
+    <div >
+        <!-- <img id='image' src="https://media.geeksforgeeks.org/wp-content/uploads/ONbulb.jpg" onclick="changeImage()"> -->
 
+        <img id='image' src="https://media.geeksforgeeks.org/wp-content/uploads/ONbulb.jpg" >
+        <button onclick="changeImage()" type="button">Click to change</button>
 
-
+        <h2 id="status">ISON : true</h2>
     </div>
 
     <script>
-        ison = true
-        let div = document.getElementById("myDiv")
+        let ison = true
+        let image = document.getElementById('image')
+        let status = document.getElementById("status")
         function changeImage() {
-            let image = document.createElement('img')
             if (ison) {
-                image.setAttribute('src',"https://media.geeksforgeeks.org/wp-content/uploads/OFFbulb.jpg")
-                div.innerHTML =""
-                div.appendChild(image) 
+                image.setAttribute('src', "https://media.geeksforgeeks.org/wp-content/uploads/OFFbulb.jpg")
             }
-            else{
-                image.setAttribute('src',"https://media.geeksforgeeks.org/wp-content/uploads/ONbulb.jpg")
-                div.innerHTML =""
-                div.appendChild(image) 
-
+            else {
+                image.setAttribute('src', "https://media.geeksforgeeks.org/wp-content/uploads/ONbulb.jpg")
             }
+            ison = !ison;
+            status.innerText = "ISON : " + ison
         }
     </script>
 </body>

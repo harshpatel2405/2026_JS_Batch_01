@@ -1,0 +1,94 @@
+keydown
+→ Fires when a key is pressed down.
+
+keyup
+→ Fires when a key is released.
+
+<==================================================>
+1. BUTTON CLICK COUNTER
+-----------------------
+Create a button "Click Me" and a <p> element.
+
+Every time the button is clicked:
+- Increase the counter by 1.
+- Display: "Button clicked: 5 times"
+
+Events:
+click
+
+
+2. DOUBLE-CLICK COLOR CHANGER
+-----------------------------
+Create a <div> of size 200px × 200px.
+
+When the user double-clicks the div:
+- Change its background color.
+- Display the message "Double Clicked!"
+
+Events:
+dblclick
+
+
+3. MOUSE ENTER / LEAVE
+----------------------
+Create a card.
+
+When the mouse enters the card:
+- Change its background color.
+- Change its text to "Mouse Inside"
+
+When the mouse leaves:
+- Restore the original color.
+- Change the text to "Mouse Outside"
+
+Events:
+mouseenter
+mouseleave
+
+
+4. MOUSE DOWN / UP
+------------------
+Create a button "Press Me".
+
+When the mouse button is pressed:
+- Change the button text to "Pressed"
+
+When the mouse button is released:
+- Change the button text to "Released"
+
+Events:
+mousedown
+mouseup
+
+
+5. MOUSE MOVE TRACKER
+---------------------
+Create a 400px × 300px box.
+
+When the mouse moves inside the box:
+- Display the current mouse X and Y coordinates.
+
+Example:
+
+Mouse X: 245
+Mouse Y: 120
+
+Hint:
+Use mousemove and event.clientX / event.clientY.
+
+
+6. IMAGE HOVER EFFECT
+---------------------
+Display an image.
+
+When the mouse enters the image:
+- Increase its width.
+- Add a shadow.
+
+When the mouse leaves:
+- Restore the original size.
+- Remove the shadow.
+
+Events:
+mouseenter
+mouseleave
