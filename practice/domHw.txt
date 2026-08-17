@@ -1,0 +1,111 @@
+JavaScript Array & DOM Manipulation – Student Coding Question
+
+Create a Student Marks Management System using HTML, CSS, and JavaScript.
+
+Functionalities to Implement:
+
+1. Add Marks
+- Create an input field to enter marks.
+- Create an "Add Marks" button.
+- Store the entered mark in an array using push().
+- Display the updated array on the webpage.
+- Do not allow empty or negative values.
+
+2. Remove Marks
+- Create a "Remove Marks" button.
+- When clicked, dynamically display two choices:
+  1. Remove by Value
+  2. Remove by Index
+
+3. Remove by Value
+- Ask the user to enter a mark.
+- Find the mark using indexOf().
+- Remove all occurrences of that mark using splice().
+- Display an error message if the mark is not present.
+
+4. Remove by Index
+- Ask the user to enter an array index.
+- Check whether the index is valid.
+- Remove the element at that index using splice().
+- Display an error message if the index is invalid.
+
+5. Calculate Total
+- Create a "Calculate Total" button.
+- Calculate the sum of all marks stored in the array.
+- Use a for...of loop to calculate the total.
+- Display the total on the webpage.
+- If the array is empty, display an appropriate warning message.
+
+6. Dynamic DOM Manipulation
+When the user clicks "Remove Marks", dynamically create the required labels, input fields, and buttons using JavaScript.
+
+Example:
+
+Select Choice: [ 1 / 2 ] [Submit]
+
+If choice = 1:
+Enter Value: [     ] [Remove]
+
+If choice = 2:
+Enter Index: [     ] [Remove]
+
+
+JavaScript Concepts / Methods to Use:
+
+- Array
+- push()
+- splice()
+- indexOf()
+- length
+- for...of loop
+- parseInt()
+- if / else
+- Functions
+- getElementById()
+- createElement()
+- appendChild()
+- setAttribute()
+- innerHTML / innerText
+- style
+
+
+Create the following functions:
+
+addMarks()
+removeMarks()
+getChoice()
+removeByValue()
+removeByIndex()
+calculateTotal()
+
+
+Example:
+
+Initially:
+Marks: []
+
+After adding:
+45, 67, 45, 89
+
+Display:
+Marks: [45, 67, 45, 89]
+
+If Remove by Value = 45:
+Marks: [67, 89]
+
+If Remove by Index = 0:
+Marks: [89]
+
+If Calculate Total is clicked:
+Total Marks: 89
+
+
+Instructions:
+
+- Write the complete program in a single HTML file.
+- Use JavaScript for all functionality.
+- Do not reload the webpage.
+- Use an array to store the marks.
+- Use DOM manipulation for dynamically created elements.
+- Display proper success and error messages.
+- Use separate functions for different operations.

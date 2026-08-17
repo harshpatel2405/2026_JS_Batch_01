@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button id="btn">click</button>
+    <input type="text" id="text">
+    <button id="button2" type='submit'>Submit</button>
+
+
+    <script>
+        let btn = document.getElementById('btn')
+        let text = document.getElementById('text')
+        let button2 = document.getElementById('button2')
+
+        btn.addEventListener('click', function () {
+            console.log("Event Listener called through button - 1")
+        })
+        btn.addEventListener('click', function () {
+            console.log("Event Listener called through button - 2")
+        })
+
+        text.addEventListener('keydown', function (e) {
+            console.log(e.target.value)
+        })
+        text.addEventListener('focus', function (e) {
+            console.log("Input Focused")
+        })
+        text.addEventListener('blur', function (e) {
+            console.log("Input blurred")
+        })
+
+        button2.addEventListener('submit',function(e){
+            console.log('hello')
+            e.preventDefault()
+        })
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #btn
+        {
+            position: absolute;
+        }
+    </style>
+</head>
+
+<body>
+    <button type="button" id="btn">Click to login</button>
+
+    <script>
+        let btn = document.getElementById('btn')
+
+        btn.addEventListener('mouseenter', function () {
+            let x =  Math.floor(Math.random() * (1000 - 10 + 1)) + 10;
+            let y = Math.floor(Math.random() * (500 - 10 + 1)) + 10;
+
+            btn.style.left = x + "px"
+            btn.style.top = y + "px"
+        })
+    </script>
+</body>
+
+</html>

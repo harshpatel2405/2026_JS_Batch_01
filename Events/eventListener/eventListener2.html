@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Listener</title>
+</head>
+
+<body>
+
+    <button id="btn">
+        Click to Execute
+    </button>
+    <button id="removebtn">
+        Click to remove
+    </button>
+
+    <script>
+
+        function getMessage() {
+            console.log("Function Called");
+        }
+
+        let btn = document.getElementById("btn");
+        let removebtn = document.getElementById("removebtn");
+
+        // Add event
+        btn.addEventListener("click", getMessage);
+
+        console.log("Hello World");
+
+        // Remove event
+        removebtn.addEventListener("click", function () {
+            btn.removeEventListener('click', getMessage)
+        });
+
+    </script>
+
+</body>
+
+</html>
