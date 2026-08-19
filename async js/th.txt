@@ -1,0 +1,26 @@
+Async -- Asynchronous 
+
+
+Sync vs async
+
+Js is sync and single threaded
+
+Key AdvantagesClear Readability: 
+Code reads top-to-bottom like regular synchronous code, removing messy .then() chains.
+Better Errors: You can use standard try/catch blocks for errors instead of separate rejection handlers.
+Easy Debugging: Line-by-line debugging and stack traces point straight to the exact failure spot.
+Non-Blocking Execution: The main thread stays free to handle clicks and animations while waiting for tasks to finish.
+
+
+
+Why We Need setTimeoutDelay actions: 
+Wait for a specific time before running code.
+Non-blocking code: Keep the main program running while waiting.
+Animations & alerts: Schedule pop-ups, tips, or visual movements.
+Event handling: Debounce inputs like search bars to wait until the user finishes typing.
+
+settimeout
+
+
+1. What is Web API?
+2. How does settimeout gets executed ?
