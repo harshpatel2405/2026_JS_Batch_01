@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form>
+        Enter name : <input id="data" type="text" placeholder="Enter name " name="uname"><br>
+        Enter Age : <input id="data1" type="number" placeholder="Enter age " name="age">
+    </form>
+    <button onclick="setData()">Set In Local Storage</button>
+    <button onclick="getData()">Get From Local Storage</button>
+    <button onclick="removeData()">Remove From Local Storage</button>
+    <button onclick="clearData()">Clear local stoarge</button>
+
+
+    <script>
+        let data = document.querySelector("#data")
+        let data1 = document.querySelector("#data1")
+
+        function setData() {
+            name = data.value;
+            age = data1.value
+            console.log(name)
+            localStorage.setItem(data.name, name)
+            localStorage.setItem(data1.name, age)
+            console.log("data set to local storage successfully")
+        }
+
+        function getData()
+        {
+            name = localStorage.getItem("uname")
+            age = localStorage.getItem("age")
+
+            console.log(name)
+            console.log(age)
+        }
+
+        function removeData()
+        {
+            localStorage.removeItem("age")
+            console.log("Age is removed from local storage")
+        }
+
+        function clearData()
+        {
+            localStorage.clear()
+        }
+    </script>
+</body>
+
+</html>
